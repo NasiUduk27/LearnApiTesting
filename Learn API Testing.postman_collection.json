@@ -1,0 +1,568 @@
+{
+  "info": {
+    "_postman_id": "6fb09a9a-b367-4ad0-9456-b56fb4d1e332",
+    "name": "Learn API Testing",
+    "description": "Kali ini saya belajar untuk testing api yang diberikan oleh website [https://automationexercise.com/api_list](https://automationexercise.com/api_list) , karena background sebelumnya web developer jadi sudah lumayan terbiasa tentang penggunaan API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "27594494",
+    "_collection_link": "https://go.postman.co/collection/27594494-6fb09a9a-b367-4ad0-9456-b56fb4d1e332?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GetAllProductList",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://automationexercise.com/api/productsList",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "productsList"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PostToAllProductList",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://automationexercise.com/api/productsList",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "productsList"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetAllBrandsList",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://automationexercise.com/api/brandsList",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "brandsList"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PutToAllBrandsList",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "https://automationexercise.com/api/brandsList",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "brandsList"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PostToSearchProduct",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "search_product",
+              "value": "tshirt",
+              "type": "text",
+              "uuid": "3b53c0a0-bb7b-46f0-a1b6-a6e0e4f4a03c"
+            },
+            {
+              "key": "",
+              "value": "",
+              "type": "text",
+              "uuid": "2a1f26c1-770c-4f9c-9736-6bf0189be143",
+              "disabled": true
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://automationexercise.com/api/searchProduct",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "searchProduct"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PostToSearchProductwithoutParameter",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://automationexercise.com/api/searchProduct",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "searchProduct"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PostToVerifyLoginWithValidDetails",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "email",
+              "value": "cobacoba@email.com",
+              "type": "text",
+              "uuid": "bd0a5442-9d0c-4754-966d-69a48dd1fb94"
+            },
+            {
+              "key": "password",
+              "value": "coba123",
+              "type": "text",
+              "uuid": "3e7d0c46-9b86-44b7-a47f-ef48b2d3f913"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://automationexercise.com/api/verifyLogin",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "verifyLogin"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeleteToVerifyLogin",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://automationexercise.com/api/verifyLogin",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "verifyLogin"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PostToVerifyLoginWithInvalidDetails",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "email",
+              "value": "cobacoba@email.com",
+              "type": "text",
+              "uuid": "b475ddb1-e9cb-46d1-b816-65d25329e305"
+            },
+            {
+              "key": "password",
+              "value": "coba123",
+              "type": "text",
+              "uuid": "8428454f-e354-4182-8e14-c3a62b465107"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://automationexercise.com/api/verifyLogin",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "verifyLogin"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PostToCreateUserAccount",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "name",
+              "value": "cobacoba",
+              "type": "text",
+              "uuid": "24f70125-5369-413b-987d-85587b9fc515"
+            },
+            {
+              "key": "email",
+              "value": "cobacoba@email.com",
+              "type": "text",
+              "uuid": "52e3137e-4508-46a9-9c19-bbf3084e5b25"
+            },
+            {
+              "key": "password",
+              "value": "coba123",
+              "type": "text",
+              "uuid": "510a0d41-c9c2-4152-ba3a-f24d858e5a82"
+            },
+            {
+              "key": "title",
+              "value": "Mr",
+              "type": "text",
+              "uuid": "4d8dcc41-f0e9-4cd4-9dd0-901113efffb8"
+            },
+            {
+              "key": "birth_date",
+              "value": "7",
+              "type": "text",
+              "uuid": "c2e81e75-4d33-4c66-9322-821210d1fc1e"
+            },
+            {
+              "key": "birth_month",
+              "value": "7",
+              "type": "text",
+              "uuid": "ab2db811-0181-4fa1-af54-6268e824f4ad"
+            },
+            {
+              "key": "birth_year",
+              "value": "2017",
+              "type": "text",
+              "uuid": "03377cbf-9dd6-489c-9d4b-39ecb0b58af9"
+            },
+            {
+              "key": "firstname",
+              "value": "coba",
+              "type": "text",
+              "uuid": "de38dcc5-54d2-457d-aa65-112704eae298"
+            },
+            {
+              "key": "lastname",
+              "value": "coba",
+              "type": "text",
+              "uuid": "beca82b8-a4f6-4ff1-a98d-3b17e49d6962"
+            },
+            {
+              "key": "company",
+              "value": "coba",
+              "type": "text",
+              "uuid": "25faad87-535a-4659-b2e2-0c8c3448b193"
+            },
+            {
+              "key": "address1",
+              "value": "coba",
+              "type": "text",
+              "uuid": "dd49333a-fe06-4abc-baf3-8a7a073005b5"
+            },
+            {
+              "key": "address2",
+              "value": "coba",
+              "type": "text",
+              "uuid": "b55c4d14-5a70-43d4-a45f-a90142010be1"
+            },
+            {
+              "key": "country",
+              "value": "india",
+              "type": "text",
+              "uuid": "d968a183-1495-4cee-8bef-b0fdf01a5deb"
+            },
+            {
+              "key": "zipcode",
+              "value": "123",
+              "type": "text",
+              "uuid": "0a7c98c9-b3e6-4e08-810e-985678ebf1bf"
+            },
+            {
+              "key": "state",
+              "value": "coba",
+              "type": "text",
+              "uuid": "87b2d276-0feb-4e56-a5c4-d2b29459ea17"
+            },
+            {
+              "key": "city",
+              "value": "coba",
+              "type": "text",
+              "uuid": "73711539-bc76-40c5-9076-2f3dcca21bdb"
+            },
+            {
+              "key": "mobile_number",
+              "value": "1234567",
+              "type": "text",
+              "uuid": "978be4c3-9e04-466f-b76e-6efd383215bc"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://automationexercise.com/api/createAccount",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "createAccount"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeleteMethodToDeleteUser",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "email",
+              "value": "cobacoba@email.com",
+              "type": "text",
+              "uuid": "a7ffa056-705f-49d8-8dca-e7c14c69c5c1"
+            },
+            {
+              "key": "password",
+              "value": "coba123",
+              "type": "text",
+              "uuid": "44c2841d-6a6d-4c00-ad3c-f8dc5e838cfb"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://automationexercise.com/api/deleteAccount",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "deleteAccount"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PutMethodToUpdateUser",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "name",
+              "value": "cobaedit",
+              "type": "text",
+              "uuid": "13542fd4-56fd-4ff5-9e51-edc4fbd742db"
+            },
+            {
+              "key": "email",
+              "value": "cobacoba@email.com",
+              "type": "text",
+              "uuid": "416baf51-fd94-4acd-bb9e-876d8c1bec4f"
+            },
+            {
+              "key": "password",
+              "value": "coba123",
+              "type": "text",
+              "uuid": "0e100c87-ab1d-4557-9d8c-cd5d0234b3c4"
+            },
+            {
+              "key": "title",
+              "value": "Mr",
+              "type": "text",
+              "uuid": "9036b741-58ac-45dd-9779-838a67e00a10"
+            },
+            {
+              "key": "birth_date",
+              "value": "7",
+              "type": "text",
+              "uuid": "6a98c2e2-869b-454f-8d66-dd390bf6938e"
+            },
+            {
+              "key": "birth_month",
+              "value": "7",
+              "type": "text",
+              "uuid": "af37ba8b-6b1a-4f4c-9514-15f537ab98d8"
+            },
+            {
+              "key": "birth_year",
+              "value": "2017",
+              "type": "text",
+              "uuid": "c4c68c01-fe04-4d43-acb5-6a7ae1fd4fa6"
+            },
+            {
+              "key": "firstname",
+              "value": "coba",
+              "type": "text",
+              "uuid": "4446c0e6-db08-4fbb-92bd-ac8ccf314ef8"
+            },
+            {
+              "key": "lastname",
+              "value": "coba",
+              "type": "text",
+              "uuid": "b4fc2a2e-8a46-4dc4-8f08-861e04fdabc4"
+            },
+            {
+              "key": "company",
+              "value": "coba",
+              "type": "text",
+              "uuid": "6e73f666-4437-4a88-9ffd-34c34b53d625"
+            },
+            {
+              "key": "address1",
+              "value": "coba",
+              "type": "text",
+              "uuid": "143dd21a-eaa2-4be1-9273-4d5fe136f88e"
+            },
+            {
+              "key": "address2",
+              "value": "coba",
+              "type": "text",
+              "uuid": "d2c60f3a-404b-4696-8be1-39be55c5b152"
+            },
+            {
+              "key": "country",
+              "value": "india",
+              "type": "text",
+              "uuid": "4a1a9dc4-3f24-4497-aae4-c86eb473da4a"
+            },
+            {
+              "key": "zipcode",
+              "value": "123",
+              "type": "text",
+              "uuid": "62ad31f0-1793-457c-916f-9de7e9c3173d"
+            },
+            {
+              "key": "state",
+              "value": "coba",
+              "type": "text",
+              "uuid": "12daa209-aa50-40b1-a202-8d6d8f019707"
+            },
+            {
+              "key": "city",
+              "value": "coba",
+              "type": "text",
+              "uuid": "b878b81f-f484-4554-afe7-1ee382ef5b30"
+            },
+            {
+              "key": "mobile_number",
+              "value": "1234567",
+              "type": "text",
+              "uuid": "b727bfc7-c1bd-41de-b5a8-0dc94117f2f5"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://automationexercise.com/api/updateAccount",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "updateAccount"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetUserAccountDetailByEmail",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": []
+        },
+        "url": {
+          "raw": "https://automationexercise.com/api/getUserDetailByEmail?email=cobacoba@email.com",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "getUserDetailByEmail"
+          ],
+          "query": [
+            {
+              "key": "email",
+              "value": "cobacoba@email.com"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
